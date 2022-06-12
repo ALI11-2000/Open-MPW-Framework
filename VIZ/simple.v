@@ -1,4 +1,4 @@
-module sensor;
+module simple;
 
  integer i;
  reg [31:0] heat;
@@ -11,7 +11,7 @@ module sensor;
 
  initial begin
 	 $dumpfile("simple.vcd");
-	 $dumpvars(0,sensor);
+	 $dumpvars(0,simple);
 	 heat = 0;
 	 for(i=0;i<=100;i++) begin
 		 @(posedge clk);
