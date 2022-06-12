@@ -39,7 +39,7 @@
          m4+gate(|example, /count, counter, ['https:/']['/raw.githubusercontent.com/ALI11-2000/Open-MPW-Framework/2cfeff63af211eca9fa3b3b92e771af33e4ad457/VIZ/counter.svg'])
          $reset = *reset;
          
-         // Two inputs, x1 and x2, used a counter to increment its value to obtain all input values
+         
          $cnt[3:0] = $reset ? 0 : >>1$cnt + $inc;
          $inc = 1'b1;
         
